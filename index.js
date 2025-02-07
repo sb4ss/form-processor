@@ -1,5 +1,5 @@
 import express from "express";
-import emailRoute from "./routes/email.routes.js"; // Asegúrate de usar .js
+import emailRoute from "./routes/email.routes.js";
 import cors from "cors";
 
 const app = express();
