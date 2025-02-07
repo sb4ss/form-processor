@@ -1,13 +1,13 @@
-const express = require("express");
+import express from "express";
+import emailRoute from "./routes/email.routes.js"; // Asegúrate de usar .js
+
 const app = express();
 
 app.use(express.json());
-const emailRoute = require("./routes/email.routes");
 app.use("/api", emailRoute);
-// Puerto del servidor
+
 const PORT = process.env.PORT || 3000;
 
-// Iniciar el servidor
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
