@@ -13,7 +13,7 @@ const sendEmailToMe = async (req, res) => {
   let asunto = info.subject;
   try {
     const { data } = await resend.emails.send({
-      from: "Acme <onboarding@resend.dev>",
+      from: "Portfolio <onboarding@resend.dev>",
       to: ["sebaszapata2022@gmail.com"],
       subject: `${asunto}`,
       html: `
